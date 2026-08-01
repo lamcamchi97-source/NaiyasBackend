@@ -5,14 +5,7 @@ using NaiyasBackend.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOpenApi();
-
 var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
 
 app.UseHttpsRedirection();
 
@@ -146,25 +139,25 @@ app.MapPost("/api/reading", async (ReadingRequest request) =>
 
     Luôn trả lời đúng theo thứ tự sau.
 
-    🌸 Tình yêu
+    Tình yêu
 
     Diễn giải.
 
     Lời khuyên.
 
-    💼 Sự nghiệp
+    Sự nghiệp
 
     Diễn giải.
 
     Lời khuyên.
 
-    💰 Tài vận
+    Tài vận
 
     Diễn giải.
 
     Lời khuyên.
 
-    ✨ Thông điệp Naiyas
+    Thông điệp Naiyas
 
     Đây là phần tổng kết.
 
